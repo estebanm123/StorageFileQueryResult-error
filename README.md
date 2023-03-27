@@ -1,6 +1,6 @@
 # Windows.Storage.Search.StorageFileQueryResult Faulty State after Idle
 ------
-This sample app is used to demonstrate a problem we are encountering where the *NeighboringFilesQuery* appears to go *bad*
+This sample app is used to demonstrate a problem we are encountering where StorageFileQueryResult enters a faulty state after idle:
 
 Repro steps:
 1. Have folder with 1000+ files.
