@@ -2,8 +2,6 @@
 ------
 This sample app is used to demonstrate a problem we are encountering where StorageFileQueryResult enters a faulty state after idle:
 
-Repro steps:
-
 Setup:
 1. Have folder with 1000+ files.
 Here's a powershell script to generate 10k empty text files in the current directory.
