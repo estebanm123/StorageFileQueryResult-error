@@ -15,4 +15,4 @@ Bug repro steps:
 2. Click the app's 'Load More StorageFiles' button until about 1000 items are queried - this can be checked in the debug console. You might not need to query this many files, I found I could repro more consistently on larger folders.
 3. Wait for about 1-2 minutes.
 4. Click 'Load More StorageFiles' again, and StorageFileQueryResult.GetFilesAsync fails to return any files. The 'Get File Count' button will also hang indefinitely in StorageFileQueryResult.GetFilesAsync.
-5. It may take a couple repros to get StorageFileQueryResult into this state and after a period in this faulty state, it may start working again.
+5. It may take a couple repros to get StorageFileQueryResult into this state, and after a certain period in this faulty state, it may start working again.
