@@ -2,6 +2,8 @@
 ------
 This sample app is used to demonstrate a problem we are encountering where StorageFileQueryResult enters a faulty state after idle:
 
+Note: We haven't been able issue to repro the issue with the FileActivatedEventArgs.NeighboringFilesQuery's StorageFileQueryResult object. It only seems to occur for StorageFileQueryResult objects created from calls to StorageFolder.CreateFileQuery*. 
+
 Setup:
 1. Have folder with 1000+ files.
 Here's a powershell script to generate 10k empty text files in the current directory.
